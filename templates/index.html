@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flicht black box</title>
+        <link rel="stylesheet" href="./templates/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./templates/css/mdb.min.css" />
+
+        <link rel="stylesheet" href="./templates/css/style.min.css" />
+    </head>
+    <body ng-app="App">
+      <div class="container p-5">
+          <h1>BlackBox</h1>
+          <div ui-view="mainpage"></div>  
+      </div>        
+    </body>
+</html>
+
+<script id="__bs_script__">//<![CDATA[
+    (function() {
+      try {
+        var script = document.createElement('script');
+        if ('async') {
+          script.async = true;
+        }
+        script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=3.0.3'.replace("HOST", location.hostname);
+        if (document.body) {
+          document.body.appendChild(script);
+        } else if (document.head) {
+          document.head.appendChild(script);
+        }
+      } catch (e) {
+        console.error("Browsersync: could not append script tag", e);
+      }
+    })()
+  //]]></script>
+
+  <script type="text/javascript" src="./templates/js/jquery.min.js?v=<?php echo getdate()[0]; ?>"></script>
+  <script type="text/javascript" src="./templates/js/jquery.min.js?v=<?php echo getdate()[0]; ?>"></script>
+  <script type="text/javascript" src="./templates/js/popper.min.js?v=<?php echo getdate()[0]; ?>"></script>
+  <script type="text/javascript" src="./templates/js/bootstrap.min.js?v=<?php echo getdate()[0]; ?>"></script>
+  <script type="text/javascript" src="./templates/js/mdb.min.js?v=<?php echo getdate()[0]; ?>"></script>
+  <script type="text/javascript" src="./templates/js/sweetalert.min.js?v=<?php echo getdate()[0]; ?>"></script>
+  
+  <script type="text/javascript" src="./templates/js/angular.min.js?v=<?php echo getdate()[0]; ?>"></script>
+  <script type="text/javascript" src="./templates/js/angular-sanitize.min.js?v=<?php echo getdate()[0]; ?>"></script>
+  <script type="text/javascript" src="./templates/js/angular-ui-router.js?v=<?php echo getdate()[0]; ?>"></script>
+
+  <script type="text/javascript" src="./templates/js/app.js?v=<?php echo getdate()[0]; ?>"></script>
+  
+  <script type="text/javascript" src="./templates/js/klm.controller.min.js?v=<?php echo getdate()[0]; ?>"></script>

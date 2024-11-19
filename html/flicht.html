@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-7 p-3">
+        <table class="table">
+            <tr>
+                <td>From / To:</td>
+                <td>(<a href="https://www.flightradar24.com/data/airports/{{flight.depIcao}}" target="_blank">{{flight.depIcao}}</a>) {{flight.departure}} //  (<a href="https://www.flightradar24.com/data/airports/{{flight.arrivalIcao}}" target="_blank">{{flight.arrivalIcao}}</a>) {{flight.arrival}} </td>
+            </tr>
+
+            <tr>
+                <td>Airline:</td>
+                <td>{{flight.airline}}</td>
+            </tr>
+
+            <tr>
+                <td>Pilot:</td>
+                <td>{{flight.pilot}}</td>
+            </tr>
+
+            <tr>
+                <td>Aircraft:</td>
+                <td>{{flight.aircraft}} ({{flight.aircraftShort}})</td>
+            </tr>
+
+            <tr>
+                <td>Landing rate:</td>
+                <td>{{flight.landing_rate}}</td>
+            </tr>
+
+            <tr>
+                <td>Landing rate:</td>
+                <td>{{flight.distance}}</td>
+            </tr>
+
+            <tr>
+                <td>Fuel burnt:</td>
+                <td>{{flight.fuelUsed}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-4 p-3">
+        <button class="btn btn-sm btn-primary">Back</button>
+        <button class="btn btn-sm btn-danger">Remove</button>
+    </div>
+</div>

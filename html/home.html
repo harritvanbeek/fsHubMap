@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat="flicht in flichts">
+            <td ng-bind-html="flicht.from"></td>
+            <td ng-bind-html="flicht.to"></td>
+            <td ng-bind-html="flicht.date"></td>
+            <td>
+                <a ui-sref="flicht({uuid:flicht.uuid})" class="btn btn-sm btn-primary"><span>View</span></a>
+                <button ng-click="remove(flicht)" class="btn btn-sm btn-danger"><span>Delete</span></button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
