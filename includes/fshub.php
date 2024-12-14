@@ -6,7 +6,7 @@
 
         public function __construct()
         {
-                                 
+            //$this->env        =   NEW \classes\core\env;                      
 
         }
 
@@ -19,7 +19,10 @@
 
         protected function request($methode = null)
         {
-            
+            $headers = [
+                'X-Pilot-Token:CBg4TijKG08PtleUxqIQskRasroYQkylMmKgo36nhkwSVvwzpiw45Yxhuoyx',
+                'User-Agent: FsHub-Sdk-Php/1.0',
+            ];
             
             $curl = curl_init(); 
             curl_setopt($curl,  CURLOPT_SSL_VERIFYPEER, false);
