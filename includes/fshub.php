@@ -20,7 +20,7 @@
         protected function request($methode = null)
         {
             $headers = [
-                'X-Pilot-Token:CBg4TijKG08PtleUxqIQskRasroYQkylMmKgo36nhkwSVvwzpiw45Yxhuoyx',
+                'X-Pilot-Token:*********',
                 'User-Agent: FsHub-Sdk-Php/1.0',
             ];
             
